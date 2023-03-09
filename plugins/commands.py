@@ -14,6 +14,7 @@ from database.connections_mdb import active_connection
 import re
 import json
 import base64
+import time
 logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
@@ -146,6 +147,7 @@ async def start(client, message):
                  #   caption=f_caption,
                   #  protect_content=msg.get('protect', False),
                    # )
+                 time.sleep(5)
                  await client.send_document(chat_id=LOG_CHANNEL, document=msg.get("file_id"), caption=f_caption)
             except FloodWait as e:
                 await asyncio.sleep(e.x)
