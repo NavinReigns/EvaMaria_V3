@@ -147,7 +147,7 @@ async def start(client, message):
                  #   caption=f_caption,
                   #  protect_content=msg.get('protect', False),
                    # )
-                 time.sleep(5)
+                 time.sleep(6)
                  await client.send_document(chat_id=LOG_CHANNEL, document=msg.get("file_id"), caption=f_caption)
             except FloodWait as e:
                 await asyncio.sleep(e.x)
