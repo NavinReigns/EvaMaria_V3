@@ -11,7 +11,7 @@ pipeline {
         stage('Deploy to Server') {
             steps {
                 script {
-                    def deployPath = "D:\Learnings\pipeline\EvaMaria_V3"
+                    def deployPath = "D:\\Learnings\\pipeline\\EvaMaria_V3"
                     bat "xcopy /E /Y /I * ${deployPath}"
                 }
             }
