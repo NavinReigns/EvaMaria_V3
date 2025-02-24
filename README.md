@@ -8,6 +8,7 @@
 - ⟴ Custom Texts (About, Help, Stats,More..)
 - ⟴ Added the Jenkins pipeline setup
 - ⟴ Custom URL Buttons (Updates channel, Add To Group, Force Sub, More...)
+- ⟴ made some updates
 
 
 
