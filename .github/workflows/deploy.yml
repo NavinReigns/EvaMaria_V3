@@ -1,7 +1,22 @@
+name: Deploy Application
+
+on:
+  push:
+    branches:
+      - koyep  # Change this to your desired branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
       - name: Trigger Deployment API
         env:
-          APP_URL: ${{ secrets.APP_URL }}
+          APP_URL: ${{ secrets.APP_URL }}  # Securely using GitHub Secret
           DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
         run: |
-          curl -X POST $APP_URL \
+          curl -X POST "$APP_URL/deploy" \  # Ensuring /deploy route is included
             -H "Authorization: Bearer $DEPLOY_TOKEN"
