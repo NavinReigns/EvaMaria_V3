@@ -9,7 +9,6 @@
 - ⟴ Custom Texts (About, Help, Stats,More..)
 - ⟴ Custom URL Buttons (Updates channel, Add To Group, Force Sub, More...)
 - ⟴ Made some updates and added the new features added the new changes.
-- ⟴ Made some minor updates for the new contetn on the site.,
 
 
 
