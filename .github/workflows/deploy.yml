@@ -18,5 +18,5 @@ jobs:
           APP_URL: ${{ secrets.APP_URL }}  # Securely using GitHub Secret
           DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
         run: |
-          curl -X POST $APP_URL" \  # Ensuring /deploy route is included
+          curl -X POST $APP_URL \  # Ensuring /deploy route is included
             -H "Authorization: Bearer $DEPLOY_TOKEN"
