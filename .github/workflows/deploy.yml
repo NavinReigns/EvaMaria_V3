@@ -1,0 +1,7 @@
+      - name: Trigger Deployment API
+        env:
+          APP_URL: ${{ secrets.APP_URL }}
+          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+        run: |
+          curl -X POST $APP_URL \
+            -H "Authorization: Bearer $DEPLOY_TOKEN"
