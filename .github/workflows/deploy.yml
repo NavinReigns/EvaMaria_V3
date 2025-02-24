@@ -3,7 +3,7 @@ name: Deploy Application
 on:
   push:
     branches:
-      - koyep  # Change this to your desired branch
+      - koyeb  # Change this to your desired branch
 
 jobs:
   deploy:
